@@ -8,10 +8,10 @@ export function App() {
   return (
     
     <div>
-      <div className="min-h-screen bg-zinc-100">
+      <div className="min-h-screen bg-zinc-100 ">
         <Navbar/> 
         
-        <li>
+        <li className="snap-y snap-mandatory">
           <Main/> 
           <About/> 
           <Projects/> 

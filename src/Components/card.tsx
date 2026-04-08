@@ -3,7 +3,7 @@ import type { ReactNode } from "react"
 export function Card({ children }: { children: ReactNode }) {
   return (
     <div className="flex justify-center items-center 
-   w-screen h-screen 
+   w-screen h-screen snap-center
    ">
       <div
         className="w-[95%] h-[90%] bg-white rounded-4xl
