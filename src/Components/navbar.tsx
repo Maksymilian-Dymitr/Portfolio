@@ -1,19 +1,51 @@
 type Props = {
- scrollToMain: () => void 
- scrollToAbout: () => void 
- scrollToProjects: () => void 
-}
+  scrollToMain: () => void;
+  scrollToAbout: () => void;
+  scrollToProjects: () => void;
+  isVisibleMain: any;
+  isVisibleAbout: any;
+  isVisibleProjects: any;
+};
 
-export function Navbar({scrollToMain, scrollToAbout, scrollToProjects}:Props) {
- 
+export function Navbar({
+  scrollToMain,
+  scrollToAbout,
+  scrollToProjects,
+  isVisibleAbout,
+  isVisibleMain,
+  isVisibleProjects,
+}: Props) {
   return (
     <div className="flex justify-center ">
-      <nav className="flex text-2xl justify-around shadow-2xl/100 w-fit h-fit  
-        rounded-4xl fixed px-3 py-2 text-zinc-700 mt-3 bg-white">
-          <button onClick={scrollToMain} className="px-4 py-2 cursor-pointer hover:text-black rounded-4xl">Home</button>
-          <button onClick={scrollToAbout} className="px-4 py-2 cursor-pointer hover:text-black rounded-4xl">About</button>
-          <button onClick={scrollToProjects} className="px-4 py-2 cursor-pointer hover:text-black rounded-4xl">Projects</button>
-        </nav>
+      <nav
+        className="flex text-2xl justify-around shadow-2xl/100 w-fit h-fit
+        rounded-4xl px-3 py-2 mt-3 bg-white fixed z-10"
+      >
+        <button
+          onClick={scrollToMain}
+          className={`px-4 py-2 cursor-pointer hover:text-black rounded-4xl
+            ${isVisibleMain ? "text-black" : "text-zinc-700"}`}
+          id="main"
+        >
+          Home
+        </button>
+        <button
+          onClick={scrollToAbout}
+          className={`px-4 py-2 cursor-pointer hover:text-black rounded-4xl
+          ${isVisibleAbout ? "text-black" : "text-zinc-700"}`}
+          id="about"
+        >
+          About
+        </button>
+        <button
+          onClick={scrollToProjects}
+          className={`px-4 py-2 cursor-pointer hover:text-black rounded-4xl
+            ${isVisibleProjects ? "text-black" : "text-zinc-700"}`}
+          id="projects"
+        >
+          Projects
+        </button>
+      </nav>
     </div>
-  )
+  );
 }
