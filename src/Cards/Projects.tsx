@@ -1,12 +1,14 @@
 import { Card } from "@/Components/card";
-export function Projects() {
+import { forwardRef } from "react"
+
+export const Projects = forwardRef(function Projects(props, projectRef:any) {
   return (
     
     <Card>
-          <div className="w-full h-full flex justify-between items-center snap-center">
-              <h1 className="p-5 text-black  
-                text-6xl font-bold"> Projects </h1> 
-          </div>
+      <div ref={projectRef} className="w-full h-full flex justify-between items-center snap-center">
+        <h1 className="p-5 text-black  
+          text-6xl font-bold"> Projects </h1> 
+      </div>
     </Card>    
   );
-}
+})
