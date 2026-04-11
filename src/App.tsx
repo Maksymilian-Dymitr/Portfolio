@@ -66,7 +66,7 @@ export function App() {
 
   return (
     <div>
-      <div className="min-h-screen bg-zinc-100 ">
+      <div className="select-none min-h-screen bg-[#111111]">
         <Navbar
           scrollToMain={scrollToMain}
           isVisibleMain={isVisiable.main}

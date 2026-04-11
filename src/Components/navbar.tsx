@@ -19,28 +19,28 @@ export function Navbar({
     <div className="flex justify-center ">
       <nav
         className="flex text-2xl justify-around shadow-2xl/100 w-fit h-fit
-        rounded-4xl px-3 py-2 mt-3 bg-white fixed z-10"
+        rounded-4xl px-3 py-2 mt-3 bg-[#1e1e1f] fixed z-10 font-bold"
       >
         <button
           onClick={scrollToMain}
-          className={`px-4 py-2 cursor-pointer hover:text-black rounded-4xl
-            ${isVisibleMain ? "text-black" : "text-zinc-700"}`}
+          className={`px-4 py-2 cursor-pointer hover:text-whtie rounded-4xl
+            ${isVisibleMain ? "text-white" : "text-zinc-400"}`}
           id="main"
         >
           Home
         </button>
         <button
           onClick={scrollToAbout}
-          className={`px-4 py-2 cursor-pointer hover:text-black rounded-4xl
-          ${isVisibleAbout ? "text-black" : "text-zinc-700"}`}
+          className={`px-4 py-2 cursor-pointer hover:text-white rounded-4xl
+            ${isVisibleAbout? "text-white" : "text-zinc-400"}`}
           id="about"
         >
           About
         </button>
         <button
           onClick={scrollToProjects}
-          className={`px-4 py-2 cursor-pointer hover:text-black rounded-4xl
-            ${isVisibleProjects ? "text-black" : "text-zinc-700"}`}
+          className={`px-4 py-2 cursor-pointer hover:text-white rounded-4xl
+            ${isVisibleProjects ? "text-white" : "text-zinc-400"}`}
           id="projects"
         >
           Projects

@@ -14,7 +14,7 @@ export const Projects = forwardRef<HTMLDivElement, Props>(
           ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
         >
           <h1
-            className="p-5 text-black
+            className="p-5 
           text-6xl font-bold"
           >
             {" "}

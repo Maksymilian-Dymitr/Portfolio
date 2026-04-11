@@ -8,8 +8,8 @@ export function Card({ children }: { children: ReactNode }) {
    "
     >
       <div
-        className="w-[95%] h-[90%] bg-white rounded-4xl
-       overflow-hidden shadow-2xl/100 flex flex-col"
+        className="w-[95%] h-[90%] bg-[#1e1e1f] rounded-4xl
+       overflow-hidden shadow-2xl/100 flex flex-col text-white"
       >
         {children}
       </div>
