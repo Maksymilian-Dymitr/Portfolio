@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 @import "tailwindcss";
 
-@theme {
-  --font-display: "Anton", sans-serif;
-}
 
-@layer base {
-  html {
-    /* Apply it globally or just use the class below */
-    font-family: var(--font-display);
-  }
-}

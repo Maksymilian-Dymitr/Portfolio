@@ -5,6 +5,7 @@ import pic from "../pic.jpg"
 
 export const Main = forwardRef<HTMLDivElement, Props>(
   ({ isVisible, id }, mainRef) => {
+    //[#7c3aed]
     return (
       <Card>
         <div
@@ -15,10 +16,7 @@ export const Main = forwardRef<HTMLDivElement, Props>(
           ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
         >
           <div className="p-12 w-[40%] flex flex-col items-center ">
-            <h1
-              className="p-7 
-              text-6xl font-bold"
-            >
+            <h1 className="p-7 text-6xl font-bold">
               Maksymilan Dymitr
             </h1>
             <div className="bg-[#292929] rounded-2xl px-4 py-2 font-medium">
@@ -29,11 +27,12 @@ export const Main = forwardRef<HTMLDivElement, Props>(
               Full-Stack Developer
             </p>
             </div>
+            
           </div>
           <div className="w-[60%] flex justify-center">
             <div className="w-fit bg-zinc-800 rounded-full pt-2 overflow-hidden
-            ring-white ring-4 "> 
-              <img src={pic} className="w-[30vw] h-[40vw] 
+            ring-white/10 ring-2 "> 
+              <img src={pic} className="w-[30vw] h-[38vw] 
               object-cover "></img>
           </div>
           </div>
