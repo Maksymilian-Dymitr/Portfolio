@@ -23,7 +23,7 @@ export function Navbar({
       >
         <button
           onClick={scrollToMain}
-          className={`px-4 py-2 cursor-pointer hover:text-whtie rounded-4xl
+          className={`px-4 py-2 cursor-pointer hover:text-white rounded-4xl
             ${isVisibleMain ? "text-white" : "text-zinc-400"}`}
           id="main"
         >

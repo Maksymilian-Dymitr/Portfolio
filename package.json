@@ -11,14 +11,17 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",
     "bun-plugin-tailwind": "^0.1.2",
+    "developer-icons": "^6.0.5",
     "react": "^19",
     "react-dom": "^19",
     "react-github-calendar": "^5.0.5",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/bun": "latest"
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.9"
   }
 }

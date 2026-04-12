@@ -1,21 +1,7 @@
-# bun-react-tailwind-template
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To start a development server:
-
-```bash
-bun dev
-```
-
-To run for production:
-
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.3.6. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+- [x] Create a Logo Loop for technologies in about 
+- [x] Make animation when hover on buttons 
+- [ ] Write More in about
+- [ ] Create grid of projects for projects with a status dot
+- [ ] Simplify the cards by seperating them as components
+- [ ] Make site responsive
